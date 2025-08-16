@@ -1,0 +1,68 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid rgba(113, 122, 134, 0.2);
+}
+.header__wrap {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__info {
+  width: 95px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.01em;
+}
+.header__link {
+  display: block;
+  margin-right: 30px;
+}
+.header__img-logo {
+  display: block;
+}
+.header__btn {
+  display: block;
+  width: 30px;
+  height: 22px;
+  background: url("../img/icons/burger.svg") center no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*,
+*::before,
+*::after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  outline-offset: 0;
+}
