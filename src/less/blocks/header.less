@@ -2,6 +2,9 @@
   width: 100%;
   padding: 10px;
   border-bottom: 1px solid rgba(113, 122, 134, 0.2);
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
 }
 .header__nav {
   width: 100%;
@@ -22,7 +25,7 @@
   margin-right: 20px;
   margin-bottom: 3px;
   text-align: center;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 0.01em;
   line-height: 0.95;
   color: #3D3F5B;
@@ -72,7 +75,12 @@
   left: 0;
   z-index: 1;
   background: #3D3F5B;
-  transition: all 0.5s ease-out; /* Анимация */
+  line-height: 0;
+  overflow: hidden;
+  transition: line-height 0.5s; /* Анимация */
+}
+.header__btn.header__btn--vert ~ .header__list {
+  line-height: 1.2;
 }
 .header__link {
   text-decoration: none;
