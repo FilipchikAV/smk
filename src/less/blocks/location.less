@@ -1,8 +1,13 @@
 .location {
   width: 100%;
   max-width: 320px;
-  padding-top: 30px;
+  padding: 30px 0;
   background: #F9FAFC;
+  
+  @media (min-width: 768px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 .location__title {
   font-weight: 400;
@@ -11,7 +16,14 @@
   margin-bottom: 10px;
   padding-left: 10px;
   line-height: 1.04;
-  color: #717a86
+  color: #717a86;
+  
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 .location__subtitle {
   font-weight: 400;
@@ -22,6 +34,8 @@
   color: #717a86;
 }
 .location__info {
+  width: 100%;
+  max-width: 300px;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 10px;
@@ -30,6 +44,13 @@
   color: #717a86;
 }
 .location__wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.location__inner-wrap {
   margin-bottom: 20px;
 }
 .location__link {

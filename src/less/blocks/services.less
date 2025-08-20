@@ -5,24 +5,56 @@
   font-weight: 400;
   line-height: 1.39;
   color: #717a86;
+  
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 .services__title {
   padding-left: 20px;
   font-size: 22px;
   font-style: normal;
+  
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 28px;
+  }
 }
+.services__wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .services__img {
   display: block;
   padding: 10px;
   margin: 0 auto;
+  
+  @media (min-width: 768px) {
+    width: 370px;
+  }
 }
 .services__subtitle {
   padding: 10px 0 10px 20px;
   font-size: 18px;
   font-style: normal;
+  
+  @media (min-width: 768px) {
+  width: 370px;
+}
 }
 .services__info {
   margin-bottom: 20px;
   padding-left: 20px;
   font-size: 14px;
+  
+  @media (min-width: 768px) {
+  width: 370px;
+}
 }
