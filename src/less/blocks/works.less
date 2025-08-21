@@ -6,6 +6,9 @@
   font-weight: 400;
   line-height: 1.39;
   color: #fff;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 .works__wrap {
   width: 100%;
@@ -19,6 +22,7 @@
 .works__title {
   font-size: 24px;
   padding: 20px;
+  font-weight: 400;
 }
 .works__img {
   display: block;
@@ -45,15 +49,14 @@
   }
 }
 .works__btn--prev {
-  top: 50%;
+  top: 43%;
   left: 3px;
   z-index: 1;
   transform: translateY(-50%) rotateY(180deg);
   background: url("../img/icons/arrow.png") center no-repeat;
-  rotate: x;
 }
 .works__btn--next {
-  top: 50%;
+  top: 43%;
   right: 3px;
   z-index: 1;
   transform: translateY(-50%);
