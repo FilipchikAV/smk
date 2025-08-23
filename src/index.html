@@ -8,7 +8,7 @@
 	<link rel="icon" href="favicon/favicon.ico" sizes="32x32">
 	<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
-	<link rel="manifest" href="favicon/manifest.webmanifest">
+	<link rel="manifest" href="favicon/site.webmanifest">
 	<title>СМК Юбилейный</title>
 </head>
 <body class="body">
@@ -26,7 +26,6 @@
 				<a href="" class="header__link--logotype">
 					<img src="img/logo-smk.png" alt="Логотип" class="header__img-logo">
 				</a>
-
 			</div>
 			<button class="header__btn">
 					<span class="header__span visually-hidden">
@@ -80,8 +79,8 @@
 	<main id="main" class="main">
 		<section class="masters">
 			<picture id="masters__info" class="masters__picture">
-				<source srcset="img/sandvik-notepad.jpg 1x" media="(min-width: 768px)">
-				<source srcset="img/sandvik-pk.jpg 1x" media="(min-width: 1280px)">
+				<source srcset="img/sandvik-pk.jpg" media="(min-width: 1280px)">
+				<source srcset="img/sandvik-notepad.jpg" media="(min-width: 768px)">
 				<img src="img/sandvik-mobile.jpg" alt="Дробилка" class="masters__img">
 			</picture>
 			<div class="masters__wrap">
@@ -100,13 +99,19 @@
 			</div>
 			<div class="masters__inner-wrap">
 				<div class="masters__subinner-wrap">
-					<img src="img/udachni-territory-mobile.jpg" alt="Придомовая территория г. Удачный" class="masters__img">
+					<picture>
+						<source srcset="img/udachni-territory-pc.jpg" media="(min-width: 1280px)">
+						<img src="img/udachni-territory-mobile.jpg" alt="Придомовая территория г. Удачный" class="masters__img">
+					</picture>
 					<p class="masters__text">
 						Придомовая территория,<br> г. Удачный
 					</p>
 				</div>
 				<div class="masters__subinner-wrap">
-					<img src="img/aykhal-territory-mobile.jpg" alt="Строительство дороги, п. Айхал" class="masters__img">
+					<picture>
+						<source srcset="img/aykhal-territory-pc.jpg" media="(min-width: 1280px)">
+						<img src="img/aykhal-territory-mobile.jpg" alt="Строительство дороги, п. Айхал" class="masters__img">
+					</picture>
 					<p id="masters__text" class="masters__text">
 						Строительство дороги,<br> п. Айхал
 					</p>
@@ -119,7 +124,7 @@
 			</h2>
 			<div class="services__wrap">
 				<picture>
-					<source srcset="img/droblenie-notepad.jpg" media="(min-width: 768px)">
+					<source srcset="img/droblenie-pc.jpg" media="(min-width: 1280px)">
 					<source srcset="img/droblenie-notepad.jpg" media="(min-width: 768px)">
 					<img src="img/droblenie-mobile.jpg" alt="Дробление" class="services__img">
 				</picture>
@@ -134,6 +139,7 @@
 			</div>
 			<div class="services__wrap">
 				<picture>
+					<source srcset="img/elcon-pc.jpg" media="(min-width: 1280px)">
 					<source srcset="img/elcon-notepad.jpg" media="(min-width: 768px)">
 					<img src="img/elcon-mobile.jpg" alt="Производство бетона" class="services__img">
 				</picture>
@@ -148,6 +154,7 @@
 			</div>
 			<div class="services__wrap">
 				<picture>
+					<source srcset="img/asfalt-pc.jpg" media="(min-width: 1280px)">
 					<source srcset="img/asfalt-notepad.jpg" media="(min-width: 768px)">
 					<img src="img/asfalt-mobile.jpg" alt="Асфальтирование" class="services__img">
 				</picture>
@@ -162,6 +169,7 @@
 			</div>
 			<div class="services__wrap">
 				<picture>
+					<source srcset="img/faw-pc.jpg" media="(min-width: 1280px)">
 					<source srcset="img/faw-notepad.jpg" media="(min-width: 768px)">
 					<img src="img/faw-mobile.jpg" alt="Грузоперевозки" class="services__img">
 				</picture>
@@ -183,8 +191,8 @@
 				<ul class="works__list">
 					<li class="works__item visually-hidden">
 						<picture>
-							<source srcset="img/udachni-ploshad-notepad.jpg" media="(min-width: 768px)">
 							<source srcset="img/udachni-ploshad-pc.jpg" media="(min-width: 1280px)">
+							<source srcset="img/udachni-ploshad-notepad.jpg" media="(min-width: 768px)">
 							<img src="img/udachni-ploshad-mobile.jpg" alt="Площадь в г. Удачном" class="works__img">
 						</picture>
 							<p class="works__info">
@@ -193,8 +201,8 @@
 					</li>
 					<li class="works__item visually-hidden">
 						<picture>
-							<source srcset="img/church-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<source srcset="img/church-aykhal-pc.jpg" media="(min-width: 1280px)">
+							<source srcset="img/church-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<img src="img/church-aykhal-mobile.jpg" alt="Тротуарная плитка вокруг храма п. Айхал" class="works__img">
 						</picture>
 						<p class="works__info">
@@ -203,8 +211,8 @@
 					</li>
 					<li class="works__item visually-hidden">
 						<picture>
-							<source srcset="img/ploshad-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<source srcset="img/ploshad-aykhal-pc.jpg" media="(min-width: 1280px)">
+							<source srcset="img/ploshad-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<img src="img/ploshad-aykhal-mobile.jpg" alt="Центральная площать п. Айхал" class="works__img">
 						</picture>
 						<p class="works__info">
@@ -213,8 +221,8 @@
 					</li>
 					<li class="works__item visually-hidden">
 						<picture>
-							<source srcset="img/dvor-udachni-notepad.jpg" media="(min-width: 768px)">
 							<source srcset="img/dvor-udachni-pc.jpg" media="(min-width: 1280px)">
+							<source srcset="img/dvor-udachni-notepad.jpg" media="(min-width: 768px)">
 							<img src="img/dvor-udachni-mobile.jpg" alt="Внутридомовая территория, г. Удачный" class="works__img">
 						</picture>
 						<p class="works__info">
@@ -223,8 +231,8 @@
 					</li>
 					<li class="works__item visually-hidden">
 						<picture>
-							<source srcset="img/ubileynaya-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<source srcset="img/ubileynaya-aykhal-pc.jpg" media="(min-width: 1280px)">
+							<source srcset="img/ubileynaya-aykhal-notepad.jpg" media="(min-width: 768px)">
 							<img src="img/ubileynaya-aykhal-mobile.jpg" alt="ул. Юбилейная, п. Айхал" class="works__img">
 						</picture>
 						<p class="works__info">
@@ -256,7 +264,8 @@
 					<p class="location__info">
 						г. Удачный (Промзона, дорога на рудник им. Ф. Б. Андреева. Мы по правой стороне.)
 					</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3821.521579554866!2d112.3225970405504!3d66.40806054065649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d66.40861444709486!2d112.32040835812734!5e1!3m2!1sru!2sru!4v1755574827300!5m2!1sru!2sru" width="320" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location__udachny-map"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3821.521579554866!2d112.3225970405504!3d66.40806054065649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d66.40861444709486!2d112.32040835812734!5e1!3m2!1sru!2sru!4v1755574827300!5m2!1sru!2sru" width="320" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden-map-min"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3821.521579554866!2d112.3225970405504!3d66.40806054065649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d66.40861444709486!2d112.32040835812734!5e1!3m2!1sru!2sru!4v1755574827300!5m2!1sru!2sru" width="520" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden-map-max"></iframe>
 				
 					<a href="tel:+74113666910" class="location__link location__phone">т.+7(41136)66-910
 					</a>
@@ -270,7 +279,8 @@
 					<p class="location__info">
 						п. Айхал, ул. Промышленная 32. (Промзона, перед перекрёстком, справа - съезд на площадку)
 					</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1945.5015904735012!2d111.50386843948552!3d65.95231702168721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d65.95234981141145!2d111.5052095439114!5e1!3m2!1sru!2sru!4v1755580062174!5m2!1sru!2sru" width="320" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1945.5015904735012!2d111.50386843948552!3d65.95231702168721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d65.95234981141145!2d111.5052095439114!5e1!3m2!1sru!2sru!4v1755580062174!5m2!1sru!2sru" width="320" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden-map-min"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1945.5015904735012!2d111.50386843948552!3d65.95231702168721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d65.95234981141145!2d111.5052095439114!5e1!3m2!1sru!2sru!4v1755580062174!5m2!1sru!2sru" width="520" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hidden-map-max"></iframe>
 					<a href="tel:+74113666909" class="location__link location__phone">
 						т.+7(41136)66-909
 					</a>
@@ -282,17 +292,33 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="footer__inner">
-			<a href="#" class="footer__link">
-				<img src="img/logo-smk-min-inverted.png" alt="Логотип" class="footer__img-logo">
-			</a>
-			<p class="footer__info">
-				Саха(Якутия)<br> п. Ахал
-			</p>
+		<ul class="footer__list">
+			<li class="footer__item">
+				<a href="#" class="footer__link">
+					<img src="img/logo-smk-min-inverted.png" alt="Логотип" class="footer__img-logo">
+				</a>
+			</li>
+			<li class="footer__item footer__item--mobile">
+				<a href="tel:+74113666909" class="footer__link location__phone">
+					т.+7(41136)66-909
+				</a>
+			</li>
+			<li class="footer__item">
+				<p class="footer__info">
+					Саха(Якутия)<br> п. Ахал
+				</p>
+			</li>
+			<li class="footer__item footer__item--mobile">
+				<a href="tel:+74113666910" class="footer__link location__phone">
+					т.+7(41136)66-910
+				</a>
+			</li>
+			<li class="footer__item">
 			<p class="footer__info">
 				2025г.
 			</p>
-		</div>
+			</li>
+		</ul>
 	</footer>
 	<script src="js/main.js" class="script"></script>
 </body>

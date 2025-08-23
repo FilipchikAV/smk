@@ -4,7 +4,8 @@
   border-top: 1px solid  #fff;
   
 }
-.footer__inner {
+.footer__list {
+  list-style-type: none;
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
@@ -17,9 +18,15 @@
   @media (min-width: 768px) {
     max-width: 768px;
   }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 .footer__link {
   display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
 }
 .footer__img-logo {
   display: block;
@@ -29,4 +36,11 @@
   font-size: 12px;
   line-height: 0.95;
   text-align: center;
+}
+.footer__item--mobile {
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
