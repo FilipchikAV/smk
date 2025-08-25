@@ -193,6 +193,8 @@
     align-items: center;
     background: #FFFFFF;
     position: static;
+    opacity: 1;
+    max-height: none;
   }
 }
 @media (min-width: 1280px) {
@@ -696,6 +698,11 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+}
+@media (min-width: 1280px) {
+  .works__info {
+    padding: 5px 20px 20px 150px;
+  }
 }
 .works__btn {
   display: block;
